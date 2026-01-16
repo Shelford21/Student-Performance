@@ -1,0 +1,134 @@
+# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+
+## Business Understanding
+
+Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah berdiri sejak tahun 2000
+dan memiliki reputasi akademik yang baik. Namun demikian, institusi menghadapi tantangan
+berupa tingginya jumlah mahasiswa yang tidak menyelesaikan pendidikan (dropout).
+
+Permasalahan dropout berdampak pada:
+- Reputasi institusi
+- Efisiensi pengelolaan sumber daya pendidikan
+- Keberlanjutan mutu proses pembelajaran
+
+Oleh karena itu, institusi membutuhkan pendekatan berbasis data untuk memahami pola dropout
+dan melakukan intervensi sedini mungkin.
+
+
+### Permasalahan Bisnis
+
+Permasalahan utama yang dihadapi adalah:
+- Tingginya angka mahasiswa yang dropout
+- Tidak adanya sistem peringatan dini untuk mendeteksi mahasiswa berisiko
+- Sulitnya pimpinan institusi memantau kondisi dropout secara menyeluruh dan berbasis data
+
+Tanpa intervensi dini, mahasiswa yang mengalami kesulitan akademik atau finansial
+cenderung terlambat terdeteksi hingga akhirnya keluar dari sistem pendidikan.
+
+### Cakupan Proyek
+
+Cakupan proyek ini meliputi:
+1. Analisis data mahasiswa untuk memahami karakteristik dropout
+2. Pembangunan business dashboard untuk monitoring performa dan risiko dropout
+3. Pengembangan model machine learning sebagai sistem early warning
+4. Penyediaan prototype aplikasi berbasis Streamlit untuk simulasi risiko dropout
+
+Proyek ini tidak bertujuan untuk menggantikan keputusan akademik,
+melainkan sebagai alat bantu pengambilan keputusan berbasis data.
+
+### Persiapan
+Sumber data: 
+![data.csv](https://github.com/dicodingacademy/a590-Belajar-Penerapan-Data-Science/blob/a590_proyek_akhir/a590_proyek_akhir/app.py)
+
+
+Setup environment:
+
+Pertama-tama kita perlu download folder projek nya , setelah download folder projek, kita buka cmd (lebih baik menggunakan anaconda prompt) dan ketik ini
+```
+cd C:\Users\Fauzan\Download\submission 
+# kita perlu berada dalam directory project yang sudah didownload , ini contoh directory nya yaa 
+```
+next kita perlu membuat virtual environment nya , mengaktifkan nya dan menginstall library yang dibutuhkan untuk menjalakan model. 
+```
+python -m venv venv 
+# membuat virtual environment
+```
+```
+venv\Scripts\activate 
+# mengaktifkan Venv nya
+```
+```
+pip install -r requirements.txt 
+# menginstall library yg dibutuhkan untuk menjalankan model
+```
+
+Lalu jalankan ini dicommand prompt (pastikan sudah dalam directory project nya):
+```
+docker build -f Dockerfile.dockerfile -t attrition_ml .
+
+# untuk membuat image nya
+```
+```
+docker run --rm -v "C:\[lokasi_folderproject]\output:/app/output" attrition_ml
+
+# untuk menjalankan model
+```
+
+Setelah ini maka akan muncul folder baru yang bernama "output" , dalam folder ini adalah hasil dari csv yang telah melewati model ML.
+
+## Business Dashboard
+
+Business dashboard dikembangkan menggunakan Metabase dengan tujuan:
+- Memberikan gambaran strategis kepada pimpinan (Rektor)
+- Menampilkan metrik utama seperti dropout rate dan retention rate
+- Mengidentifikasi program studi dengan risiko dropout tertinggi
+- Menunjukkan sinyal akademik dan finansial yang berkaitan dengan dropout
+
+Dashboard dirancang pada level agregat (tanpa menampilkan data individu mahasiswa)
+dan berfokus pada insight yang dapat ditindaklanjuti secara strategis.
+
+![alt text](fauzan21-dashboard.png)
+
+## Menjalankan Sistem Machine Learning
+
+```
+
+```
+## Conclusion
+
+Berdasarkan hasil analisis dan pemodelan:
+- Dropout mahasiswa tidak terjadi secara acak, tetapi memiliki pola yang dapat dikenali
+- Performa akademik semester pertama merupakan indikator paling kuat terhadap risiko dropout
+- Faktor finansial berperan sebagai faktor pendukung yang memperkuat risiko
+- Model machine learning mampu digunakan sebagai sistem peringatan dini yang explainable
+
+Pendekatan berbasis data memungkinkan institusi untuk beralih dari
+reaktif menjadi preventif dalam menangani dropout mahasiswa.
+
+### Rekomendasi Action Items 
+
+Berdasarkan insight yang diperoleh, berikut rekomendasi yang dapat diterapkan:
+
+1. **Early Academic Mentoring**  
+   Mahasiswa dengan performa rendah pada semester pertama perlu
+   langsung masuk ke program pendampingan akademik terstruktur.
+
+2. **Intervensi Terfokus per Program Studi**  
+   Program studi dengan tingkat dropout tertinggi perlu dilakukan
+   evaluasi kurikulum awal dan sistem dukungan mahasiswa.
+
+3. **Dukungan Finansial Tersegmentasi**  
+   Mahasiswa dengan risiko akademik dan kendala finansial
+   perlu diprioritaskan dalam program bantuan biaya atau skema pembayaran.
+
+4. **Pemanfaatan Sistem Early Warning**  
+   Model machine learning dan dashboard dapat digunakan
+   sebagai alat monitoring rutin untuk mendukung pengambilan keputusan pimpinan.
+
+Dengan implementasi rekomendasi tersebut, Jaya Jaya Institut diharapkan
+dapat menekan angka dropout dan meningkatkan keberhasilan studi mahasiswa secara berkelanjutan.
+
+## Akun Metabase:
+Email: fauzanarisandiwoodward90@gmail.com
+
+Pass:HRD123
