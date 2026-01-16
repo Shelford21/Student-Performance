@@ -67,6 +67,7 @@ Untuk mencoba model yang telah dibuat , masuk ke link streamlit ini:
 ![Streamlit](https://student-performance21.streamlit.app/)
 
 Akan ada 7 input , yakni:
+
 1️⃣ Age at Enrollment
 (Umur saat mahasiswa pertama kali masuk)
 
