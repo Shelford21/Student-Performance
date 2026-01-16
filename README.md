@@ -63,10 +63,38 @@ dan berfokus pada insight yang dapat ditindaklanjuti secara strategis.
 ![alt text](fauzan21-dashboard.png)
 
 ## Menjalankan Sistem Machine Learning
+Untuk mencoba model yang telah dibuat , masuk ke link streamlit ini:
+![Streamlit](https://student-performance21.streamlit.app/)
 
-```
+Akan ada 7 input , yakni:
+1️⃣ Age at Enrollment
+(Umur saat mahasiswa pertama kali masuk)
 
-```
+2️⃣ Admission Grade
+(Nilai saat diterima masuk perguruan tinggi)
+
+3️⃣ Curricular Units Enrolled (Semester 1)
+(Jumlah mata kuliah yang diambil di semester pertama)
+
+4️⃣ Curricular Units Approved (Semester 1)
+(Jumlah mata kuliah yang berhasil diluluskan)
+
+5️⃣ Average Grade (Semester 1)
+(Rata-rata nilai akademik semester pertama)
+
+6️⃣ Scholarship Holder
+(Status penerima beasiswa)
+
+7️⃣ Tuition Fees Up to Date
+(Status pembayaran uang kuliah)
+
+Setelah semua kolom input sudah ditentukan nilai nya maka selanjutnya klik tombol "Predict Dropout Risk"
+
+Maka akan diberikan output yang menunjukan:
+- persentase peluang dropout pada mahasiswa
+- rekomendasi aksi pada mahasiswa tersebut
+<img width="814" height="348" alt="image" src="https://github.com/user-attachments/assets/12956ee6-49e6-4652-a16e-c5ba3e8356c7" />
+
 ## Conclusion
 
 Berdasarkan hasil analisis dan pemodelan:
