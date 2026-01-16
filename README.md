@@ -64,6 +64,7 @@ dan berfokus pada insight yang dapat ditindaklanjuti secara strategis.
 
 ## Menjalankan Sistem Machine Learning
 Untuk mencoba model yang telah dibuat , masuk ke link streamlit ini:
+
 ![Streamlit](https://student-performance21.streamlit.app/)
 
 Akan ada 7 input , yakni:
