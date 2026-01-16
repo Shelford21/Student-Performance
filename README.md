@@ -43,38 +43,11 @@ Sumber data:
 
 Setup environment:
 
-Pertama-tama kita perlu download folder projek nya , setelah download folder projek, kita buka cmd (lebih baik menggunakan anaconda prompt) dan ketik ini
+Untuk menjalankan app.py dalam lokal, pertama-tama anda perlu mengunduh folder projek ini. Setelah itu buka folder projek nya di vscode. Lalu buka terminal dalam vscode dan ketik ini:
 ```
-cd C:\Users\Fauzan\Download\submission 
-# kita perlu berada dalam directory project yang sudah didownload , ini contoh directory nya yaa 
+python -m streamlit run app.py
 ```
-next kita perlu membuat virtual environment nya , mengaktifkan nya dan menginstall library yang dibutuhkan untuk menjalakan model. 
-```
-python -m venv venv 
-# membuat virtual environment
-```
-```
-venv\Scripts\activate 
-# mengaktifkan Venv nya
-```
-```
-pip install -r requirements.txt 
-# menginstall library yg dibutuhkan untuk menjalankan model
-```
-
-Lalu jalankan ini dicommand prompt (pastikan sudah dalam directory project nya):
-```
-docker build -f Dockerfile.dockerfile -t attrition_ml .
-
-# untuk membuat image nya
-```
-```
-docker run --rm -v "C:\[lokasi_folderproject]\output:/app/output" attrition_ml
-
-# untuk menjalankan model
-```
-
-Setelah ini maka akan muncul folder baru yang bernama "output" , dalam folder ini adalah hasil dari csv yang telah melewati model ML.
+Maka website streamlit projek ini akan terbuka.
 
 ## Business Dashboard
 
